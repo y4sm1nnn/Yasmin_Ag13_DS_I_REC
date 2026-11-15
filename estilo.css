@@ -1,0 +1,152 @@
+
+/* CONFIGURAÇÕES GERAIS */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #29252C;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 25px;
+}
+
+/* LINHA DIVISÓRIA */
+
+hr {
+    border: 0;
+    border-top: 4px solid #F7C843;
+    margin: 30px 0;
+}
+
+/* MENU DE NAVEGAÇÃO */
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+
+.menu a {
+    background-color: #2864A5;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 18px;
+    border: 3px solid #F0E6D2;
+    font-weight: bold;
+    box-shadow: 4px 4px 0px #D92736;
+    transition: 0.2s;
+}
+
+/* EFEITO AO PASSAR O MOUSE NO MENU */
+
+.menu a:hover {
+    background-color: #F7C843;
+    color: #29252C;
+    transform: translateY(-5px);
+    box-shadow: 4px 8px 0px #D92736;
+}
+
+/* ORGANIZAÇÃO DAS TRÊS SEÇÕES */
+
+#conteudo {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+/* CARTÕES DAS SEÇÕES */
+
+.card {
+    flex: 1;
+    min-width: 0;
+    background-color: #35313A;
+    border: 4px solid #F0E6D2;
+    padding: 15px;
+    box-shadow: 7px 7px 0px #D92736;
+    transition: 0.2s;
+}
+
+/* EFEITO AO PASSAR O MOUSE NOS CARTÕES */
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 9px 12px 0px #F7C843;
+}
+
+/* ORGANIZAÇÃO DAS IMAGENS */
+
+.imagens {
+    display: flex;
+    gap: 8px;
+}
+
+.imagens img {
+    width: calc(50% - 4px);
+    height: 170px;
+    object-fit: cover;
+    border: 3px solid #F7C843;
+    margin: 0;
+    transition: 0.3s;
+}
+
+/* EFEITO NAS IMAGENS */
+
+.imagens img:hover {
+    transform: scale(1.05);
+    border-color: #D92736;
+}
+
+/* ADAPTAÇÃO PARA CELULARES */
+
+@media (max-width: 700px) {
+    #conteudo {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
+
+/* TÍTULO PRINCIPAL */
+
+h1 {
+    background-color: #2864A5;
+    color: #FFFFFF;
+    border: 3px solid #F0E6D2;
+    padding: 12px;
+    box-shadow: 5px 5px 0px #D92736;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* TÍTULOS DAS SEÇÕES */
+
+.titulo-secao {
+    font-weight: bold;
+}
+
+/* GIFS DAS PÁGINAS INÍCIO E SOBRE */
+
+body:has(img[src="gifs/scott3.gif"]) img,
+body:has(img[src="gifs/scott4.gif"]) img {
+    display: block;
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    border: 4px solid #F0E6D2;
+    box-shadow: 7px 7px 0px #D92736;
+    margin: 25px auto;
+}
+
+/* BORDA PADRÃO DAS IMAGENS */
+
+img {
+    border: 3px solid #F7C843;
+}
